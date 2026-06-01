@@ -1,39 +1,47 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KokiJPN | YouTube チャンネル紹介</title>
-  <meta name="description" content="KokiJPN の YouTube チャンネル紹介サイト。最新動画やコンテンツをご紹介します。" />
-  <meta property="og:title" content="KokiJPN | YouTube チャンネル紹介" />
-  <meta property="og:description" content="KokiJPN の YouTube チャンネル紹介サイト。" />
+  <title>KokiJPN | YouTube & Japan Tour Guide</title>
+  <meta name="description" content="Official site for KokiJPN. Watch the latest YouTube videos and book a personal Japan tour guide." />
+  <meta property="og:title" content="KokiJPN | YouTube & Japan Tour Guide" />
+  <meta property="og:description" content="Watch the latest videos and book a personal Japan tour guide." />
   <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;800&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="hero">
-    <nav class="nav">
-      <div class="nav__logo">KokiJPN</div>
+    <nav class="nav container">
+      <div class="nav__logo">
+        <span class="nav__mark">こ</span>
+        <span class="nav__name">KokiJPN</span>
+      </div>
       <ul class="nav__menu">
         <li><a href="#about">About</a></li>
-        <li><a href="#contents">Contents</a></li>
+        <li><a href="#latest">Latest</a></li>
+        <li><a href="#tour">Tour Guide</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <div class="hero__inner">
+    <div class="hero__inner container">
+      <p class="hero__kicker">日本案内 &middot; Japan Guide</p>
       <h1 class="hero__title">
-        ようこそ、<span class="accent">KokiJPN</span> へ
+        <span class="hero__title-jp">ようこそ、日本へ。</span>
+        <span class="hero__title-en">Welcome to <span class="accent">KokiJPN</span></span>
       </h1>
       <p class="hero__lead">
-        YouTube で日常・テック・趣味の動画を発信中。<br />
-        まずはチャンネルを覗いてみてください！
+        Stories from Japan on YouTube, and personal tours through the places I love.
       </p>
       <div class="hero__cta">
         <a class="btn btn--primary" href="https://www.youtube.com/@KokiJPN" target="_blank" rel="noopener">
-          YouTube チャンネルを見る
+          Visit the YouTube channel
         </a>
-        <a class="btn btn--ghost" href="#about">もっと知る</a>
+        <a class="btn btn--ghost" href="#tour">Book a tour</a>
       </div>
     </div>
   </header>
@@ -41,52 +49,170 @@
   <main>
     <section id="about" class="section">
       <div class="container">
+        <p class="section__eyebrow">— 自己紹介 —</p>
         <h2 class="section__title">About</h2>
         <p class="section__text">
-          KokiJPN は、視聴者の毎日に少しの発見と楽しさを届けることを目指しています。
-          動画では実体験ベースのレビュー、解説、Vlog などをお届けしています。
+          KokiJPN shares the everyday side of Japan — food, tech, travel, and the small details that
+          don&rsquo;t make it into guidebooks. Now offering personal tour guide services so you can
+          experience it in person.
         </p>
       </div>
     </section>
 
-    <section id="contents" class="section section--alt">
+    <section id="latest" class="section section--alt">
       <div class="container">
+        <p class="section__eyebrow">— 最新動画 —</p>
+        <h2 class="section__title">Latest Video</h2>
+        <div class="video">
+          <!-- Replace VIDEO_ID with the latest video ID from https://www.youtube.com/@KokiJPN -->
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/VIDEO_ID?rel=0"
+            title="KokiJPN latest video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+        <p class="section__text section__text--center">
+          More on the channel &rarr;
+          <a class="link" href="https://www.youtube.com/@KokiJPN" target="_blank" rel="noopener">@KokiJPN</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="contents" class="section">
+      <div class="container">
+        <p class="section__eyebrow">— コンテンツ —</p>
         <h2 class="section__title">Contents</h2>
         <div class="cards">
           <article class="card">
-            <h3 class="card__title">Tech / レビュー</h3>
-            <p class="card__text">気になるガジェットやサービスを実際に試して紹介します。</p>
+            <h3 class="card__title">Tech / Reviews</h3>
+            <p class="card__text">Hands-on looks at gadgets and services worth talking about.</p>
           </article>
           <article class="card">
             <h3 class="card__title">Vlog</h3>
-            <p class="card__text">日々の出来事や旅の記録など、ライフスタイル系コンテンツ。</p>
+            <p class="card__text">Everyday moments, travel notes, and lifestyle clips from Japan.</p>
           </article>
           <article class="card">
             <h3 class="card__title">How-to</h3>
-            <p class="card__text">初心者向けに役立つ解説やチュートリアル動画を公開中。</p>
+            <p class="card__text">Beginner-friendly tutorials and walkthroughs.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section id="tour" class="section section--alt">
+      <div class="container container--narrow">
+        <p class="section__eyebrow">— 観光ガイド申込 —</p>
+        <h2 class="section__title">Tour Guide Booking</h2>
+        <p class="section__text">
+          A personal guide service for travelers visiting Japan. Tell me what you&rsquo;d like to see
+          and I&rsquo;ll plan a route that fits your interests, pace, and budget.
+        </p>
+
+        <!-- Replace YOUR_FORM_ID with your Formspree form ID: https://formspree.io/ -->
+        <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="[KokiJPN] New tour guide request" />
+
+          <div class="form__row">
+            <label class="form__field">
+              <span class="form__label">Full name <em>*</em></span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label class="form__field">
+              <span class="form__label">Email <em>*</em></span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+          </div>
+
+          <div class="form__row">
+            <label class="form__field">
+              <span class="form__label">Country / region</span>
+              <input type="text" name="country" autocomplete="country-name" />
+            </label>
+            <label class="form__field">
+              <span class="form__label">Number of guests <em>*</em></span>
+              <input type="number" name="party_size" min="1" max="20" value="2" required />
+            </label>
+          </div>
+
+          <div class="form__row">
+            <label class="form__field">
+              <span class="form__label">Preferred date <em>*</em></span>
+              <input type="date" name="date" required />
+            </label>
+            <label class="form__field">
+              <span class="form__label">City / area</span>
+              <input type="text" name="area" placeholder="e.g. Tokyo, Kyoto, Osaka" />
+            </label>
+          </div>
+
+          <label class="form__field">
+            <span class="form__label">Tour style</span>
+            <select name="style">
+              <option value="">— select —</option>
+              <option>Food & local izakaya</option>
+              <option>Shrines & temples</option>
+              <option>Anime / pop culture</option>
+              <option>Nature & day trip</option>
+              <option>Custom (write in message)</option>
+            </select>
+          </label>
+
+          <label class="form__field">
+            <span class="form__label">What would you like to do? <em>*</em></span>
+            <textarea name="message" rows="5" required placeholder="Anything you want to see, eat, or experience."></textarea>
+          </label>
+
+          <button class="btn btn--primary" type="submit">Send booking request</button>
+          <p class="form__note">I&rsquo;ll reply by email within a few days.</p>
+        </form>
       </div>
     </section>
 
     <section id="contact" class="section">
       <div class="container container--narrow">
+        <p class="section__eyebrow">— お問い合わせ —</p>
         <h2 class="section__title">Contact</h2>
         <p class="section__text">
-          コラボ・お仕事のご相談は、YouTube のチャンネル概要欄に記載のリンクからご連絡ください。
+          For collaborations, business inquiries, or general questions, please use the form below.
         </p>
-        <div class="contact__actions">
-          <a class="btn btn--primary" href="https://www.youtube.com/@KokiJPN" target="_blank" rel="noopener">
-            チャンネルへ移動
-          </a>
-        </div>
+
+        <!-- Replace YOUR_FORM_ID with your Formspree form ID -->
+        <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="[KokiJPN] General inquiry" />
+
+          <div class="form__row">
+            <label class="form__field">
+              <span class="form__label">Name <em>*</em></span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label class="form__field">
+              <span class="form__label">Email <em>*</em></span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+          </div>
+
+          <label class="form__field">
+            <span class="form__label">Subject</span>
+            <input type="text" name="subject" />
+          </label>
+
+          <label class="form__field">
+            <span class="form__label">Message <em>*</em></span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+
+          <button class="btn btn--primary" type="submit">Send message</button>
+          <p class="form__note">I&rsquo;ll get back to you as soon as possible.</p>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <small>&copy; <span id="year"></span> KokiJPN. All rights reserved.</small>
+      <small>&copy; <span id="year"></span> KokiJPN &middot; All rights reserved.</small>
       <a href="https://www.youtube.com/@KokiJPN" target="_blank" rel="noopener" aria-label="YouTube">
         YouTube
       </a>

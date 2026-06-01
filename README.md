@@ -43,3 +43,17 @@ npx serve .
 - `index.html` … 文言・セクション構成
 - `styles.css` … カラー（`--color-accent` などの CSS 変数）・余白
 - `script.js` … 動的処理（現状はフッターの年号表示のみ）
+
+## 公開前にやること
+
+`index.html` 内のプレースホルダーを実際の値に置き換えてください。
+
+| プレースホルダー | 置換内容 |
+| --- | --- |
+| `VIDEO_ID` | 最新動画の YouTube ID（URL 末尾 `?v=` の値） |
+| `YOUR_FORM_ID`（2 箇所） | [Formspree](https://formspree.io/) で作成したフォーム ID |
+
+Formspree は無料プランで月 50 件まで送信可能です（[料金プラン](https://formspree.io/plans)）。
+GitHub アカウントでサインアップ → New form → 表示される `https://formspree.io/f/XXXXXXXX` の
+`XXXXXXXX` 部分を `YOUR_FORM_ID` に貼り付けてください。観光ガイド申込用と一般問い合わせ用で
+別々のフォームを作ると振り分けが楽になります。
