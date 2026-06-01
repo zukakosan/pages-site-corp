@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KokiJPN | YouTube チャンネル紹介</title>
+  <meta name="description" content="KokiJPN の YouTube チャンネル紹介サイト。最新動画やコンテンツをご紹介します。" />
+  <meta property="og:title" content="KokiJPN | YouTube チャンネル紹介" />
+  <meta property="og:description" content="KokiJPN の YouTube チャンネル紹介サイト。" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="nav__logo">KokiJPN</div>
+      <ul class="nav__menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contents">Contents</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero__inner">
+      <h1 class="hero__title">
+        ようこそ、<span class="accent">KokiJPN</span> へ
+      </h1>
+      <p class="hero__lead">
+        YouTube で日常・テック・趣味の動画を発信中。<br />
+        まずはチャンネルを覗いてみてください！
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="https://www.youtube.com/@KokiJPN" target="_blank" rel="noopener">
+          YouTube チャンネルを見る
+        </a>
+        <a class="btn btn--ghost" href="#about">もっと知る</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title">About</h2>
+        <p class="section__text">
+          KokiJPN は、視聴者の毎日に少しの発見と楽しさを届けることを目指しています。
+          動画では実体験ベースのレビュー、解説、Vlog などをお届けしています。
+        </p>
+      </div>
+    </section>
+
+    <section id="contents" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Contents</h2>
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title">Tech / レビュー</h3>
+            <p class="card__text">気になるガジェットやサービスを実際に試して紹介します。</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Vlog</h3>
+            <p class="card__text">日々の出来事や旅の記録など、ライフスタイル系コンテンツ。</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">How-to</h3>
+            <p class="card__text">初心者向けに役立つ解説やチュートリアル動画を公開中。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container container--narrow">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__text">
+          コラボ・お仕事のご相談は、YouTube のチャンネル概要欄に記載のリンクからご連絡ください。
+        </p>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="https://www.youtube.com/@KokiJPN" target="_blank" rel="noopener">
+            チャンネルへ移動
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>&copy; <span id="year"></span> KokiJPN. All rights reserved.</small>
+      <a href="https://www.youtube.com/@KokiJPN" target="_blank" rel="noopener" aria-label="YouTube">
+        YouTube
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
